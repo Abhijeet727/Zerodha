@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count = "3" parallel = "tests">
+ 
+  <test name="ChromeTest">
+  <parameter name = "browser" value = "Chrome"/>
+    <classes>
+      <class name="TempTest.VerifyBuyAndSellStock"/>
+       <class name="TempTest.VerifyTourKite"/>
+      <class name="TempTest.VerifySerachBoxAndChartPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="FirefoxTest">
+  <parameter name = "browser" value = "Firefox"/>
+    <classes>
+      <class name="TempTest.VerifyBuyAndSellStock"/>
+       <class name="TempTest.VerifyTourKite"/>
+      <class name="TempTest.VerifySerachBoxAndChartPage"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
