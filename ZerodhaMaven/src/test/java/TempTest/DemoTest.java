@@ -38,7 +38,7 @@ System.setProperty("webdriver.chrome.driver", "G:\\Selenium Automation\\chromedr
 	loginPageZerodha.sendPinNo();
 	loginPageZerodha.clickOnContinueButton();
 	
-	Thread.sleep(5000);
+	Thread.sleep(3000);
 	
 	MarketWatchAndSerachBoxSection marketWatchAndSerachBoxSection = 
 			new MarketWatchAndSerachBoxSection(driver);
